@@ -12,6 +12,7 @@ env:
   JF_DOCKER_REPO: dev-docker-local
   IMAGE_NAME: octo-billing
   BUILD_NAME: octo-billing-build
+  OIDC_PROVIDER_NAME: MCodeVisionary/octo-billing@github
 
 jobs:
   build-test-deploy:
