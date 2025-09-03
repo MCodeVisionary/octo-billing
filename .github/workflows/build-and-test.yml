@@ -35,9 +35,9 @@ jobs:
         version: 2.78.8
         oidc-provider-name: ${{ env.OIDC_PROVIDER_NAME }}
       
-    - name: echo
+    - name: echo rt ping
       run: |
-        echo "${{ steps.setup-jfrog-cli.outputs.oidc-user }}"
+        jf rt ping
     
     - name: Docker login
       uses: docker/login-action@v3
