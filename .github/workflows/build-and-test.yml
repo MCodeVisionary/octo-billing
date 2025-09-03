@@ -37,7 +37,7 @@ jobs:
       
     - name: echo
       run: |
-        echo `${{ steps.setup-jfrog-cli.outputs.oidc-user }}`
+        echo "${{ steps.setup-jfrog-cli.outputs.oidc-user }}"
     
     - name: Docker login
       uses: docker/login-action@v3
